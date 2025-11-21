@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: squares;
-  src: url("assets\Squares Bold Free.otf");
+  src: url("https://raw.githubusercontent.com/jackmadethat/protocol/refs/heads/main/src/assets/Squares Bold Free.otf");
 }
 
 @font-face {
   font-family: kode;
-  src: url("assets\KodeMono.ttf");
+  src: url("https://raw.githubusercontent.com/jackmadethat/protocol/refs/heads/main/src/assets/KodeMono.ttf");
 }
 
 html {
@@ -70,6 +70,19 @@ p, ul, ol {
   margin-right: auto;
   max-width: 300px;
   margin-top: 10px;
+}
+
+.systemList {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  li {
+    list-style-type: none;
+    input {
+      margin-right: 15px;
+    }
+  }
 }
 
 .progressionList {
@@ -136,10 +149,18 @@ p, ul, ol {
 
 .settingsIcon {
   filter: invert(100%);
+  position: fixed;
   width: 35px;
   height: 35px;
-  margin-left: auto; 
-  margin-right: 7px;
+  right: 15px;
+}
+
+.timerIcon {
+  filter: invert(100%);
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  right: 55px;
 }
 
 .centerIcon {
@@ -283,4 +304,78 @@ p, ul, ol {
   p {
     margin-bottom: -10px;
   }
+}
+
+.nutritionData {
+  font-size: 0.8em;
+}
+
+#weight {
+  padding: 3px;
+  width: 65px;
+  margin-left: 10px;
+  font-family: squares;
+  text-align: right;
+  font-size: 1em;
+}
+
+#submitWeight {
+  width: 70px;
+  height: 28px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  font-family: squares;
+  transform: translate(0px, -1px);
+}
+
+.timer {
+  font-size: 6em;
+  text-align: center;
+  margin-top: -249px;
+}
+
+.step {
+  font-size: 1.3em;
+  margin-top: -110px;
+  margin-bottom: 90px;
+}
+
+.timerButtons {
+  margin-top: 140px;
+  button {
+    background-color: #ffffff17;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: auto;
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
+    font-family: kode;
+  }
+
+  span {
+    font-family: squares;
+  }
+
+  button:hover {
+    background-color: #ffffff63;
+  }
+  
+  .active {
+    background-color: #ff00dd44;
+  }
+}
+
+.adjust {
+  position: relative;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.tinyImg {
+  position: absolute;
+  top: -100px;
+  width: 1px;
+  height: 1px;
 }
