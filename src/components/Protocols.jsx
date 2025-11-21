@@ -22,8 +22,8 @@ const Protocols = () => {
     { name: 'shaolin protocol', image: 'https://raw.githubusercontent.com/jackmadethat/protocol/refs/heads/main/src/assets/img/icon_monk.png', filter: `${filterOptions} hue-rotate(0deg)`, borderColor: colors.orange, textColor: colors.orange },
     { name: 'spartan protocol', image: 'https://raw.githubusercontent.com/jackmadethat/protocol/refs/heads/main/src/assets/img/icon_spartan.png', filter: `${filterOptions} hue-rotate(270deg)`, borderColor: colors.red, textColor: colors.red },
     { name: 'infantry protocol', image: 'https://raw.githubusercontent.com/jackmadethat/protocol/refs/heads/main/src/assets/img/icon_survivor.png', filter: `${filterOptions} hue-rotate(55deg)`, borderColor: colors.green, textColor: colors.green },
-    { name: 'system maintenance', image: '/src/assets/img/icon_skull.png', filter: `opacity(0.25) saturate(0%) sepia(0%) brightness(50%) hue-rotate(0deg)`, borderColor: colors.white, textColor: colors.white },
-    { name: 'interval timer', image: '/src/assets/img/icon_blank.png', filter: `${filterOptions} hue-rotate(240deg)`, borderColor: colors.purple, textColor: colors.purple },
+    { name: 'system maintenance', image: 'https://raw.githubusercontent.com/jackmadethat/protocol/refs/heads/main//src/assets/img/icon_skull.png', filter: `opacity(0.25) saturate(0%) sepia(0%) brightness(50%) hue-rotate(0deg)`, borderColor: colors.white, textColor: colors.white },
+    { name: 'interval timer', image: 'https://raw.githubusercontent.com/jackmadethat/protocol/refs/heads/main//src/assets/img/icon_blank.png', filter: `${filterOptions} hue-rotate(240deg)`, borderColor: colors.purple, textColor: colors.purple },
   ];
     const components = {
     0: <Warrior />,
@@ -97,7 +97,7 @@ const Protocols = () => {
   return (
     <>
       <Navigation handleSystemClick={handleSystemClick} handleTimerClick={handleTimerClick} />
-      <div className="center" style={{ marginTop: `${visible_protocol ? "25%" : "10%"}` }}>
+      <div className="center" style={{ marginTop: `${visible_protocol ? "250px" : "60px"}` }}>
         <div className="scroll left" onClick={handleLeftClick}></div>
         <div className="scroll right" onClick={handleRightClick}></div>
         <div className="centerIcon" style={{ borderColor: characters[currentIndex].borderColor }}>

@@ -136,7 +136,7 @@ p, ul, ol {
 }
 
 .center {
-  position: relative;
+  position: absolute;
   justify-content: middle;
   text-align: center;
   width: 95%;
