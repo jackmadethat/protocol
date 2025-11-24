@@ -1,8 +1,8 @@
 const Shaolin = () => {
   return (
     <>
-      <h3>Minimalist Strength Routine</h3>
-      <p>Perform this routine 2-5 days per week with 1-2 rest days in between. The Push-Pull-Squat structure is formulated to enable progression in key areas and the core section ensures attention is paid to the abdominals.</p>
+      <h3>Minimalist Strength-Building Routine</h3>
+      <p>Perform this routine 2-5 days per week with 1-2 rest days in-between. The Push-Pull-Squat structure is formulated to enable progression in key areas and the core section ensures attention is paid to the abdominals.</p>
       <h3>Warmup</h3>
       <div className="dataDiv3col">
         <p className="leftSide">Jumping Jacks</p><p className="spartanP">-</p><p className="rightSide"><b>30</b>sec</p>
@@ -18,7 +18,7 @@ const Shaolin = () => {
         <p className="leftSide">Kneeling Wrist Extension</p><p className="spartanP">-</p><p className="rightSide"><b>30</b>sec</p>
       </div>
       <h3 className="subHeading">Strength Conditioning</h3>
-      <p><b>3</b>x<b>10</b>, <b>60</b>sec rest</p>
+      <p><b>3</b>x<b>10</b>, <b>60</b>sec rest.</p>
       <h4 className="subHeading">Push</h4>
       <div className="progressionList">
         <ol className="spartanList">
@@ -54,6 +54,7 @@ const Shaolin = () => {
       </div>
       <p className="subText"><span className="spartanP">*</span>Requires equipment</p>
       <h3>Core Work</h3>
+      <p>Perform each movement in sequence with no rest in-between.</p>
       <div className="dataDiv3col">
         <p className="leftSide">Plank w/ Shoulder Taps</p><p className="spartanP">-</p><p className="rightSide"><b>45</b>sec</p>
         <p className="leftSide">Hollow Body Hold</p><p className="spartanP">-</p><p className="rightSide"><b>45</b>sec</p>

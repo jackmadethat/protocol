@@ -39,6 +39,9 @@ const System = () => {
 
   return (
     <>
+      <h3>Lifestyle</h3>
+      <Checklist />
+      <p className="subText"><span className="systemP">*</span>Persistent data relies on the browser's local storage.</p>
       <h3>Nutrition</h3>
       <form id="setWeight" onSubmit={handleSubmit}>
         <label htmlFor="weight">Set Desired Weight (kg):</label>
@@ -70,9 +73,16 @@ const System = () => {
           </div>
         </div>
       }
-      <h3>Lifestyle</h3>
-      <Checklist />
-      <p className="subText"><span>*</span>Persistent data relies on the browser's local storage</p>
+      <p className="subText"><span className="systemP">*</span>Persistent data relies on the browser's local storage.</p>
+      <h3>Rules</h3>
+      <div className="list" style={{ maxWidth: "400px" }}>
+        <ol className="systemOrderedList">
+          <li><b>Be consistent</b>. Work out at least 3 times per week with a rest day after workout days. Stick with a workout program for a minimum of 30 days before evaluating if it's working for you.</li>
+          <li><b>Need no witness</b>. Don't work out for any other reason than your own development and wellbeing.</li>
+          <li><b>Track your stats</b>. Journal notes about your workouts, take regular progress pics, and occasionally max-out your deadlift, squat and bench-press to build self-knowledge and understand progression needs.</li>
+          <li><b>Prioritize sleep and rest</b>. High-quality and consistent sleep is critical for maintaining energy and focus throughout the day, as well as a well-functioning metabolism, and rest days are crucial for recovery, healing, and good mental health.</li>
+        </ol>
+      </div>
     </>
   );
 };

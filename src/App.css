@@ -94,12 +94,33 @@ p, ul, ol {
   margin-top: 10px;
 }
 
-.warriorList li::marker {
-  color: rgb(42, 142, 235);
+.warriorList {
+  li::marker {
+    color: rgb(42, 142, 235);
+  }
 }
 
-.spartanList li::marker {
-  color: rgb(201, 42, 42);
+.spartanList {
+  li::marker {
+    color: rgb(201, 42, 42);
+  }
+}
+
+.systemOrderedList {
+  font-size: 0.9em;
+  b {
+    font-size: 1.35em;
+  }
+  li {
+    margin-bottom: 7px;
+  }
+  li::marker {
+    color: rgb(155, 155, 155);
+  }
+}
+
+.systemP {
+  color: rgb(155, 155, 155);
 }
 
 .spartanP {
@@ -135,15 +156,23 @@ p, ul, ol {
   transition: filter 1s;
 }
 
+.footer {
+  text-align: center;
+  font-size: 0.65em;
+  user-select: none;
+  opacity: 0.4;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .center {
-  position: absolute;
+  position: relative;
   justify-content: middle;
   text-align: center;
   width: 95%;
-  height: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 50px;
   transition: margin-top 1s;
 }
 
