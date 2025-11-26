@@ -106,6 +106,12 @@ p, ul, ol {
   }
 }
 
+.shaolinList {
+  li::marker {
+    color: rgb(255, 211, 91);
+  }
+}
+
 .systemOrderedList {
   font-size: 0.9em;
   b {
