@@ -6,7 +6,6 @@ const App = () => {
   return (
     <>
       <Protocols />
-      <p className="footer">jackmadethat.github.io</p>
     </>
   )
 }

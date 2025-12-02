@@ -36,8 +36,20 @@ h3 {
   font-family: squares;
 }
 
+h3:not(:first-of-type) {
+  margin-top: 30px;
+}
+
 p, ul, ol {
   font-family: kode;
+}
+
+a {
+  color: rgb(155, 155, 155);
+}
+
+a:hover {
+  color: rgb(105, 105, 105);
 }
 
 .navigation {
@@ -76,12 +88,20 @@ p, ul, ol {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -5px;
   width: 400px;
+  display: inline-block;
   li {
     list-style-type: none;
+    padding: 5px;
     input {
-      margin-right: 15px;
+      display: table-cell;
     }
+  }
+  span {
+    line-height: 20px;
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
@@ -109,6 +129,12 @@ p, ul, ol {
 .shaolinList {
   li::marker {
     color: rgb(255, 211, 91);
+  }
+}
+
+.systemColorList {
+  li::marker {
+    color: rgb(105, 105, 105);
   }
 }
 
@@ -172,10 +198,10 @@ p, ul, ol {
 }
 
 .center {
-  position: relative;
+  position: absolute;
   justify-content: middle;
   text-align: center;
-  width: 95%;
+  width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -286,6 +312,7 @@ p, ul, ol {
 
 .subText {
   font-size: 0.75em;
+  margin-top: 0px;
 }
 
 .dataDiv {
@@ -413,4 +440,28 @@ p, ul, ol {
   top: -100px;
   width: 1px;
   height: 1px;
+}
+
+input:where([type="checkbox"]) {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-top: 5px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  background: #fff no-repeat center center;
+}
+
+input:where([type="checkbox"]):where(:active:not(:disabled), :focus) {
+  border-color: #fff;
+  outline: none;
+}
+
+input:where([type="checkbox"]):disabled {
+  background: #fff;
+}
+
+input[type="checkbox"]:checked {
+  background-color: rgb(61, 61, 61);
 }

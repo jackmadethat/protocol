@@ -70,7 +70,7 @@ const Checklist = () => {
       {tasks.map((task) => (
         <li key={task.id}>
           <input type="checkbox" checked={task.completed} onChange={() => handleToggle(task.id)} />
-          <span style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
+          <span style={{ paddingLeft: '10px', textDecoration: task.completed ? 'line-through' : 'none' }}>
             {task.text}
           </span>
         </li>

@@ -38,7 +38,18 @@ const System = () => {
   ];
 
   return (
-    <>
+    <div className="systemContainer">
+      <h3>Benchmarks</h3>
+      <div className="list" style={{ maxWidth: "400px" }}>
+        <ul className="systemColorList">
+          <li><b>Sit-Ups</b> (feet pinned): 60 / 2min</li>
+          <li><b>Push-Ups</b>: 40 / 2min</li>
+          <li><b>Pull-Ups</b>: 6 / set</li>
+          <li><b>2.5km Run</b>: 10min 30sec</li>
+          <li><b>Beep Test</b> (20m): 10.1</li>
+        </ul>
+      </div>
+      <p>Download beep test audio <a href="./src/assets/beeptest.mp3" target="_blank">here</a>.</p>
       <h3>Lifestyle</h3>
       <Checklist />
       <p className="subText"><span className="systemP">*</span>Persistent data relies on the browser's local storage.</p>
@@ -48,7 +59,7 @@ const System = () => {
         <input type="number" id="weight" name="weight" value={weight} onChange={(event) => setWeight(event.target.value)} />
         <input type="submit" id="submitWeight" form="setWeight" value="Set" /><br />
       </form>
-      <p>Desired Weight: {isNaN(weightInKg) || weightInKg === 0 ? ("Not Set") : (weightInKg + "kg")}</p>
+      <p style={{ marginTop: "0px" }}><b>Desired Weight: {isNaN(weightInKg) || weightInKg === 0 ? ("Not Set") : (weightInKg + "kg")}</b></p>
       {isNaN(weightInKg) || weightInKg === 0 ? <></> :
         <div>
           <div>
@@ -83,7 +94,7 @@ const System = () => {
           <li><b>Prioritize sleep and rest</b>. High-quality and consistent sleep is critical for maintaining energy and focus throughout the day, as well as a well-functioning metabolism, and rest days are crucial for recovery, healing, and good mental health.</li>
         </ol>
       </div>
-    </>
+    </div>
   );
 };
 

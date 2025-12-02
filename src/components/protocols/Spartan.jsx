@@ -17,8 +17,12 @@ const Shaolin = () => {
         <p className="leftSide">Downwards Dog</p><p className="spartanP">-</p><p className="rightSide"><b>30</b>sec</p>
         <p className="leftSide">Kneeling Wrist Extension</p><p className="spartanP">-</p><p className="rightSide"><b>30</b>sec</p>
       </div>
+      <h3>Progression</h3>
+      <p>Choose 1 movement from each group based on personal capability. When you can comfortably perform a movement for the stated sets with good form, start working on the next progression.</p>
+      <p>For the weighted movements, such as squats, curls and rows, when you can complete the sets with a 20kg bar and 5kg plates (or 12-15kg dumbells), start working on the next progression.</p>
+      <p><b>Optional</b>: A pair of parallettes is a useful addition - you can swap the Archer and One-Arm Push-Ups with Deep Push-Ups and Tricep Dips.</p>
       <h3 className="subHeading">Strength Conditioning</h3>
-      <p><b>3</b>x<b>10</b>, <b>60</b>sec rest.</p>
+      <p><b>3</b>x<b>10</b>, <b>60</b>sec rest</p>
       <h4 className="subHeading">Push</h4>
       <div className="progressionList">
         <ol className="spartanList">
@@ -61,10 +65,6 @@ const Shaolin = () => {
         <p className="leftSide">Leg Raises</p><p className="spartanP">-</p><p className="rightSide"><b>45</b>sec</p>
         <p className="leftSide">Mountain Climbers</p><p className="spartanP">-</p><p className="rightSide"><b>45</b>sec</p>
       </div>
-      <h3>Progression</h3>
-      <p>Choose 1 movement from each group based on personal capability. When you can comfortably perform a movement for the stated sets with good form, start working on the next progression.</p>
-      <p>For the weighted movements, such as squats, curls and rows, when you can complete the sets with a 20kg bar and 5kg plates (or 12-15kg dumbells), start working on the next progression.</p>
-      <p><b>Optional</b>: A pair of parallettes is a useful addition - you can swap the Archer and One-Arm Push-Ups with Deep Push-Ups and Tricep Dips.</p>
       <h3>Required Equipment</h3>
       <div className="list">
         <ul className="spartanList">

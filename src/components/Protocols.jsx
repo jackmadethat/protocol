@@ -109,6 +109,7 @@ const Protocols = () => {
         <div className="protocol" style={{ clipPath: `polygon(${!visible_protocol ? '0 0, 100% 0, 100% 100%, 0 100%' : '0 0, 100% 0, 100% 0, 0 0'})` }}>
           {displayComponent}
         </div>
+        <p className="footer">jackmadethat.github.io</p>
       </div>
     </>
   )
