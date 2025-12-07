@@ -37,6 +37,7 @@ const Warrior = () => {
         <ul className="warriorList">
           <li>Parallettes</li>
           <li>10kg Dumbells</li>
+          <li>Weighted Vest</li>
         </ul>
       </div>
       <h3>Substitutions</h3>
